@@ -1,0 +1,52 @@
+{
+  "session_id": "session_001",
+  "agent_name": "AI Voice Assistant",
+  "created_at": "2025-11-24T21:30:00Z",
+  "logs": [
+    {
+      "turn": 1,
+      "timestamp": "2025-11-24T21:30:01Z",
+      "user_utterance": "Hello, what can you do?",
+      "speech_to_text_confidence": 0.98,
+      "intent_detected": "greeting",
+      "entities": {},
+      "agent_reasoning": "User greeted. Respond with list of capabilities.",
+      "agent_response_text": "Hi! I can answer your questions, help with tasks, and assist you with information.",
+      "agent_speech_generated": true
+    },
+    {
+      "turn": 2,
+      "timestamp": "2025-11-24T21:30:10Z",
+      "user_utterance": "Set a reminder for tomorrow morning.",
+      "speech_to_text_confidence": 0.94,
+      "intent_detected": "set_reminder",
+      "entities": {
+        "datetime": "2025-11-25T09:00:00"
+      },
+      "agent_reasoning": "User wants reminder. Confirm before creating.",
+      "agent_response_text": "Sure! I’ll remind you tomorrow morning.",
+      "action_triggered": "create_reminder",
+      "agent_speech_generated": true
+    },
+    {
+      "turn": 3,
+      "timestamp": "2025-11-24T21:30:20Z",
+      "user_utterance": "Thanks!",
+      "speech_to_text_confidence": 0.99,
+      "intent_detected": "gratitude",
+      "entities": {},
+      "agent_reasoning": "User expressing thanks. Respond politely.",
+      "agent_response_text": "You’re welcome!",
+      "agent_speech_generated": true
+    }
+  ],
+  "analytics": {
+    "total_turns": 3,
+    "average_stt_confidence": 0.97,
+    "intents_detected": [
+      "greeting",
+      "set_reminder",
+      "gratitude"
+    ]
+  }
+}
